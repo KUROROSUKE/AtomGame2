@@ -17,7 +17,7 @@ function view_P1_hand() {
     const area = document.getElementById("P1_hand")
     P1_hand.forEach((element, index) => {
         const img = document.createElement("img")
-        img.src   = `../../image/${elementToNumber[element]}.png`
+        img.src   = `../image/${elementToNumber[element]}.png`
         img.alt   = element
         img.title = index
         img.style.width  = `${MIN_SIZE * 0.15}px`
@@ -48,7 +48,7 @@ function view_P2_hand() {
     const area = document.getElementById("P2_hand")
     P2_hand.forEach((element, index) => {
         const img = document.createElement("img")
-        img.src   = `../../image/${elementToNumber[element]}.png`
+        img.src   = `../image/${elementToNumber[element]}.png`
         img.alt   = element
         img.title = index
         img.style.width  = `${MIN_SIZE * 0.15}px`
