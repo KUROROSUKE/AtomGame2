@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素ゲーム</title>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh; /* 画面全体の高さを使用 */
+        }
+        .top {
+            margin-top: 10px; /* 上の余白調整 */
+        }
+        .bottom {
+            margin-bottom: 10px; /* 下の余白調整 */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div id="P1_hand" class="top"></div>
+        <div id="P2_hand" class="bottom"></div>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        initialize();
+        view_P1_hand();
+    </script>
+</body>
+</html>
